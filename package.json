@@ -1,0 +1,14 @@
+{
+  "name": "@esperanc/pcd-gallery-2022",
+  "main": "c58c648380842983@1701.js",
+  "version": "1701.0.0",
+  "homepage": "https://observablehq.com/@esperanc/pcd-gallery-2022",
+  "author": {
+    "name": "Claudio Esperança",
+    "url": "https://observablehq.com/@esperanc"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}

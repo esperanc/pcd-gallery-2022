@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<!--
+<title>PCD gallery 2022</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<body>
+<div id=mainDiv></div>
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, 
+	name => {
+  if (name === "mainDisplay") return new Inspector(document.querySelector("#mainDiv"));
+  if (name === "imagens") return new Inspector(document.querySelector("#mainDiv"));
+  if (name === "styles") return new Inspector(document.querySelector("#mainDiv"));
+});
+
+</script>
+-->
+<body>
+	<style>
+		*, *::before, *::after {
+		box-sizing: border-box;
+	}
+	html, body {
+	  height: 100%;
+	  overflow: hidden;
+	}
+	* {
+		margin: 0;
+	}
+
+	</style>
+<div id="observablehq-mainDisplay-d70f9b00"></div>
+<div id="dummy" style="display:none"></div>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<script type="module">
+import {Runtime, Library, Inspector} from "./runtime.js";
+import define from "./index.js";
+new Runtime().module(define, name => {
+  if (name === "mainDisplay") return new Inspector(document.querySelector("#observablehq-mainDisplay-d70f9b00"));
+  if (name === "imagens") return new Inspector(document.querySelector("#dummy"));
+  if (name === "styles") return new Inspector(document.querySelector("#dummy"));
+  return ["galleryImages","galleryData2022","sampleImages","unassigned","paintings","galleryData","display","setLabUnassigned","floorPlan","scene","pickPainting","getCurrentExhibit","setDefaultLabyrinth","animateCamera","turnLeft","turnRight","walkAhead","assignButtonCallbacks"].includes(name);
+});
+</script>
+</body>
